@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <Def Name="Parent" Abstract="True">
+    </Def>
+
+    <Def ParentName="Parent">
+    </Def>
+</Defs>
