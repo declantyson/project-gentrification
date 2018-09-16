@@ -2,6 +2,7 @@
 <ModMetaData>
     <name>Project Gentrification</name>
     <author>Declan Tyson</author>
+    <targetVersion>0.19.2009</targetVersion>
     <url>http://github.com/declantyson/project-gentrification</url>
     <description>Turn Rimworld into Suburbia</description>
 </ModMetaData>
