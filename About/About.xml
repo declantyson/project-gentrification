@@ -4,5 +4,15 @@
     <author>Declan Tyson</author>
     <targetVersion>0.19.2009</targetVersion>
     <url>http://github.com/declantyson/project-gentrification</url>
-    <description>Turn Rimworld into Suburbia</description>
+    <description>
+        Turn Rimworld into Suburbia. This mod includes:
+
+        - White Picket Fences
+        - Espresso Machines and Kettles
+
+
+        Dependencies:
+
+        - Syrchalis' Coffee and Tea: https://ludeon.com/forums/index.php?topic=43449
+    </description>
 </ModMetaData>
