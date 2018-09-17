@@ -4,10 +4,10 @@
         <defName>EspressoMachine</defName>
         <label>Espresso machine</label>
         <thingClass>Building_WorkTable</thingClass>
-        <description>A table with all the tools you need to make glass, and it runs off of electricity.</description>
+        <description>A machine that makes coffee.</description>
         <graphicData>
-            <texPath>Things/Building/Production/EspressoMachine</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Production/EspressoMachine</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
         </graphicData>
         <costList>
             <Steel>20</Steel>
@@ -21,7 +21,6 @@
             <Flammability>1.0</Flammability>
             <Cleanliness>-6</Cleanliness>
         </statBases>
-        <size>(2,1)</size>
         <surfaceType>Item</surfaceType>
         <designationCategory>Production</designationCategory>
         <passability>Impassable</passability>
@@ -36,7 +35,6 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <startElectricalFires>true</startElectricalFires>
                 <basePowerConsumption>80</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
@@ -44,7 +42,7 @@
         </comps>
         <building>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-            <heatPerTickWhileWorking>0.5</heatPerTickWhileWorking>
+            <heatPerTickWhileWorking>0.1</heatPerTickWhileWorking>
         </building>
         <researchPrerequisites>
             <li>Electricity</li>
