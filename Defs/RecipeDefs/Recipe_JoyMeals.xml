@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef ParentName="CookMealBase">
+        <defName>MakeFrapp</defName>
+        <label>make frappuccino</label>
+        <description>Orange mocha frappuccinos!!</description>
+        <jobString>Making frappucinos.</jobString>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Brewing</soundWorking>
+        <allowMixingIngredients>True</allowMixingIngredients>
+        <workAmount>400</workAmount>
+        <recipeUsers>
+            <li>EspressoMachine</li>
+        </recipeUsers>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Milk</li>
+                <li>SyrRawCoffee</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Milk</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SyrRawCoffee</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <products>
+            <Frappuccino>5</Frappuccino>
+        </products>
+        <skillRequirements>
+            <Cooking>4</Cooking>
+        </skillRequirements>
+    </RecipeDef>
+</Defs>
