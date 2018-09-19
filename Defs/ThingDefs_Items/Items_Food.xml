@@ -63,4 +63,41 @@
             </li>
         </comps>
     </ThingDef>
+
+    <ThingDef ParentName="MealRottable">
+        <defName>Popcorn</defName>
+        <label>popcorn</label>
+        <description>A moreish snack made from popped corn kernels.</description>
+        <graphicData>
+            <texPath>Things/Item/Food/Popcorn</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>40</WorkToMake>
+            <MarketValue>5</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <ingestible>
+            <preferability>MealSimple</preferability>
+            <chairSearchRadius>16</chairSearchRadius>
+            <foodType>Processed</foodType>
+            <joyKind>Luxury</joyKind>
+            <joy>1</joy>
+            <baseIngestTicks>40</baseIngestTicks>
+            <nurseable>false</nurseable>
+            <nutrition>0.25</nutrition>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <ingestCommandString>Eat {0}</ingestCommandString>
+            <ingestReportString>Eating {0}.</ingestReportString>
+        </ingestible>
+    </ThingDef>
 </Defs>

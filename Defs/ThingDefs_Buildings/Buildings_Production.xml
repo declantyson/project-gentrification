@@ -19,7 +19,7 @@
             <WorkToBuild>1300</WorkToBuild>
             <MaxHitPoints>180</MaxHitPoints>
             <Flammability>1.0</Flammability>
-            <Cleanliness>-6</Cleanliness>
+            <Cleanliness>-2</Cleanliness>
         </statBases>
         <surfaceType>Item</surfaceType>
         <designationCategory>Production</designationCategory>
