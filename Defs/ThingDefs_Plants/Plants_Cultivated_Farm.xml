@@ -37,7 +37,7 @@
             <harvestWork>200</harvestWork>
             <harvestTag>Standard</harvestTag>
             <harvestYield>50</harvestYield>
-            <harvestedThingDef>Avocado</harvestedThingDef>
+            <harvestedThingDef>RawAvocado</harvestedThingDef>
             <harvestFailable>true</harvestFailable>
         </plant>
     </ThingDef>
