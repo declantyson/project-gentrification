@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="DrugBase">
+        <defName>Frappuccino</defName>
+        <label>frappuccino</label>
+        <description>Coffee, but on ice.</description>
+        <graphicData>
+            <texPath>Things/Item/Drug/Frappuccino</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>400</WorkToMake>
+            <MarketValue>22</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <ingestible>
+            <preferability>NeverForNutrition</preferability>
+            <chairSearchRadius>16</chairSearchRadius>
+            <foodType>Fluid, Processed</foodType>
+            <joyKind>Luxury</joyKind>
+            <joy>1</joy>
+            <baseIngestTicks>240</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Social</drugCategory>
+            <ingestSound>Ingest_Drink</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>SyrCoffeeHigh</hediffDef>
+                    <severity>0.3</severity>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>SyrCaffeineTolerance</hediffDef>
+                    <severity>0.05</severity>
+                    <divideByBodySize>true</divideByBodySize>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>0.15</offset>
+                </li>
+                <li Class="CoffeeAndTea.IngestionOutcomeDoer_RemoveHediff">
+                    <hediffDef>SyrTeaHigh</hediffDef>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>SyrCaffeine</chemical>
+                <addictiveness>0.05</addictiveness>
+                <minToleranceToAddict>0.20</minToleranceToAddict>
+                <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+                <needLevelOffset>1</needLevelOffset>
+                <listOrder>1</listOrder>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

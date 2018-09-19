@@ -25,9 +25,11 @@
         <designationCategory>Production</designationCategory>
         <passability>Impassable</passability>
         <pathCost>70</pathCost>
-        <hasInteractionCell>False</hasInteractionCell>
+        <hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <recipes>
             <li>Brew_SyrCoffee</li>
+            <li>MakeFrapp</li>
         </recipes>
         <inspectorTabs>
             <li>ITab_Bills</li>

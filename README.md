@@ -7,11 +7,14 @@ Turn Rimworld into Suburbia
 - White picket fence ✅
 - Kettle
 - Coffee machine ✅
+- Frappuccino ✅
 - Sandwich board
 - Red brick walls
 - Store signs
     - Waitrose ✅
     - Starbucks ✅
     - Urban Outfitters
-- Avocado
+- Avocado ✅
 - Cinema screens
+- Cinema screens
+- Popcorn
