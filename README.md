@@ -14,7 +14,7 @@ Turn Rimworld into Suburbia
     - Waitrose ✅
     - Starbucks ✅
     - Urban Outfitters
-- Avocado
+- Avocado ✅
 - Cinema screens
 - Cinema screens
 - Popcorn
