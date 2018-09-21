@@ -58,6 +58,7 @@
         <recipeUsers>
             <li>ElectricStove</li>
             <li>FueledStove</li>
+            <li>Microwave</li>
         </recipeUsers>
         <fixedIngredientFilter>
             <thingDefs>
@@ -80,5 +81,34 @@
         <skillRequirements>
             <Cooking>3</Cooking>
         </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="CookMealBase">
+        <defName>MakeMicrowaveDinner</defName>
+        <label>make microwave dinner</label>
+        <description>Quickly throw together ingredients to make a below-par meal.</description>
+        <jobString>Microwaving.</jobString>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Brewing</soundWorking>
+        <allowMixingIngredients>True</allowMixingIngredients>
+        <workAmount>100</workAmount>
+        <recipeUsers>
+            <li>Microwave</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>0.5</count>
+            </li>
+        </ingredients>
+        <products>
+            <MicrowaveDinner>1</MicrowaveDinner>
+        </products>
+        <workSkill>None</workSkill>
     </RecipeDef>
 </Defs>

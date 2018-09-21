@@ -100,4 +100,25 @@
             <ingestReportString>Eating {0}.</ingestReportString>
         </ingestible>
     </ThingDef>
+
+    <ThingDef ParentName="MealRottable">
+        <defName>MicrowaveDinner</defName>
+        <label>microwave dinner</label>
+        <description>Relatively tasteless, but anyone can make it.</description>
+        <graphicData>
+            <texPath>Things/Item/Meal/Simple</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>10</MarketValue>
+        </statBases>
+        <ingestible>
+            <chairSearchRadius>25</chairSearchRadius>
+            <preferability>MealAwful</preferability>
+            <tasteThought>AteAwfulMeal</tasteThought>
+            <nutrition>0.6</nutrition>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
 </Defs>
