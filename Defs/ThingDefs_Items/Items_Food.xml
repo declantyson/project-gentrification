@@ -77,6 +77,7 @@
             <WorkToMake>40</WorkToMake>
             <MarketValue>5</MarketValue>
             <Mass>0.01</Mass>
+            <Nutrition>0.25</Nutrition>
         </statBases>
         <techLevel>Neolithic</techLevel>
         <ingestible>
@@ -87,7 +88,6 @@
             <joy>1</joy>
             <baseIngestTicks>40</baseIngestTicks>
             <nurseable>false</nurseable>
-            <nutrition>0.25</nutrition>
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>Meal_Eat</ingestSound>
             <ingestHoldOffsetStanding>
@@ -111,12 +111,12 @@
         </graphicData>
         <statBases>
             <MarketValue>10</MarketValue>
+            <Nutrition>0.6</Nutrition>
         </statBases>
         <ingestible>
             <chairSearchRadius>25</chairSearchRadius>
             <preferability>MealAwful</preferability>
             <tasteThought>AteAwfulMeal</tasteThought>
-            <nutrition>0.6</nutrition>
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>Meal_Eat</ingestSound>
         </ingestible>

@@ -19,7 +19,7 @@
   <WorkGiverDef>
     <defName>DoBillsMicrowave</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>None</workType>
+    <workType>Cooking</workType>
     <priorityInType>100</priorityInType>
 	<prioritizeSustains>true</prioritizeSustains>
 	<fixedBillGiverDefs>

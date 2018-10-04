@@ -80,7 +80,6 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <recipes>
             <li>MakePopcorn</li>
-            <li>MakeMicrowaveDinner</li>
         </recipes>
         <inspectorTabs>
             <li>ITab_Bills</li>
