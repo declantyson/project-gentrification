@@ -17,3 +17,4 @@ Turn Rimworld into Suburbia
 - Avocado ✅
 - Cinema screens
 - Popcorn
+- Microwave

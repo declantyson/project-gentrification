@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <WorkGiverDef>
-    <defName>DoBillsBrewCoffee</defName>
+    <defName>DoBillsEspressoMachine</defName>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Cooking</workType>
     <priorityInType>100</priorityInType>
@@ -11,6 +11,22 @@
 	</fixedBillGiverDefs>
     <verb>brewing coffee from</verb>
     <gerund>brewing coffee at</gerund>
+	<requiredCapacities>
+		<li>Manipulation</li>
+	</requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>DoBillsMicrowave</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>100</priorityInType>
+	<prioritizeSustains>true</prioritizeSustains>
+	<fixedBillGiverDefs>
+		<li>Microwave</li>
+	</fixedBillGiverDefs>
+    <verb>using</verb>
+    <gerund>using</gerund>
 	<requiredCapacities>
 		<li>Manipulation</li>
 	</requiredCapacities>

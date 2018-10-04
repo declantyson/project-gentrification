@@ -13,13 +13,13 @@
             <Steel>20</Steel>
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
-        <altitudeLayer>Building</altitudeLayer>
+        <altitudeLayer>Item</altitudeLayer>
         <useHitPoints>True</useHitPoints>
         <statBases>
             <WorkToBuild>1300</WorkToBuild>
             <MaxHitPoints>180</MaxHitPoints>
             <Flammability>1.0</Flammability>
-            <Cleanliness>-6</Cleanliness>
+            <Cleanliness>-2</Cleanliness>
         </statBases>
         <surfaceType>Item</surfaceType>
         <designationCategory>Production</designationCategory>
@@ -45,6 +45,56 @@
         <building>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
             <heatPerTickWhileWorking>0.1</heatPerTickWhileWorking>
+        </building>
+        <researchPrerequisites>
+            <li>Electricity</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef Name="Microwave" ParentName="BuildingBase">
+        <defName>Microwave</defName>
+        <label>microwave</label>
+        <thingClass>Building_WorkTable</thingClass>
+        <description>Provides people who can't cook with an ability to make food.</description>
+        <graphicData>
+            <texPath>Things/Production/Microwave</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+        </graphicData>
+        <costList>
+            <Steel>20</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <altitudeLayer>Item</altitudeLayer>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>1500</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-2</Cleanliness>
+        </statBases>
+        <surfaceType>Item</surfaceType>
+        <designationCategory>Production</designationCategory>
+        <passability>Impassable</passability>
+        <pathCost>70</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <recipes>
+            <li>MakePopcorn</li>
+        </recipes>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>50</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <heatPerTickWhileWorking>2</heatPerTickWhileWorking>
         </building>
         <researchPrerequisites>
             <li>Electricity</li>

@@ -63,4 +63,62 @@
             </li>
         </comps>
     </ThingDef>
+
+    <ThingDef ParentName="MealRottable">
+        <defName>Popcorn</defName>
+        <label>popcorn</label>
+        <description>A moreish snack made from popped corn kernels.</description>
+        <graphicData>
+            <texPath>Things/Item/Food/Popcorn</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>40</WorkToMake>
+            <MarketValue>5</MarketValue>
+            <Mass>0.01</Mass>
+            <Nutrition>0.25</Nutrition>
+        </statBases>
+        <techLevel>Neolithic</techLevel>
+        <ingestible>
+            <preferability>MealSimple</preferability>
+            <chairSearchRadius>16</chairSearchRadius>
+            <foodType>Processed</foodType>
+            <joyKind>Luxury</joyKind>
+            <joy>1</joy>
+            <baseIngestTicks>40</baseIngestTicks>
+            <nurseable>false</nurseable>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <ingestCommandString>Eat {0}</ingestCommandString>
+            <ingestReportString>Eating {0}.</ingestReportString>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="MealRottable">
+        <defName>MicrowaveDinner</defName>
+        <label>microwave dinner</label>
+        <description>Relatively tasteless, but anyone can make it.</description>
+        <graphicData>
+            <texPath>Things/Item/Meal/Simple</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>10</MarketValue>
+            <Nutrition>0.6</Nutrition>
+        </statBases>
+        <ingestible>
+            <chairSearchRadius>25</chairSearchRadius>
+            <preferability>MealAwful</preferability>
+            <tasteThought>AteAwfulMeal</tasteThought>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
 </Defs>

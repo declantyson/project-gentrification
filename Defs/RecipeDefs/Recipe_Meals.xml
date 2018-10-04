@@ -44,4 +44,42 @@
             <Cooking>4</Cooking>
         </skillRequirements>
     </RecipeDef>
+
+    <RecipeDef ParentName="CookMealBase">
+        <defName>MakePopcorn</defName>
+        <label>pop corn</label>
+        <description>Makes for a delicious sweet or savoury snack, ideal for eating whilst watching television. Quick to make.</description>
+        <jobString>Popping corn.</jobString>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Brewing</soundWorking>
+        <allowMixingIngredients>True</allowMixingIngredients>
+        <workAmount>40</workAmount>
+        <recipeUsers>
+            <li>ElectricStove</li>
+            <li>FueledStove</li>
+            <li>Microwave</li>
+        </recipeUsers>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RawCorn</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RawCorn</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <products>
+            <Popcorn>1</Popcorn>
+        </products>
+        <skillRequirements>
+            <Cooking>3</Cooking>
+        </skillRequirements>
+    </RecipeDef>
 </Defs>
