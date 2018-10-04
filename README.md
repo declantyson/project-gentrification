@@ -16,5 +16,5 @@ Turn Rimworld into Suburbia
     - Urban Outfitters
 - Avocado ✅
 - Cinema screens
-- Popcorn
-- Microwave
+- Popcorn ✅
+- Microwave ✅
